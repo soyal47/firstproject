@@ -21,6 +21,12 @@ app.use("/api/profile",require("./routs/profileRoutes"))
 app.use('/api/employ',require('./routs/employrout'))
 app.use('/api/deshboard',require('./routs/DeshbordRoutes'))
 app.use('/api/users',require('./routs/usreRoutes'))
+app.use('/api/addtocart',require('./routs/addtocartrout'))
+app.use('/api/wishlist',require('./routs/wishlistrout'))
+app.use('/api/products',require('./routs/productsrout'))
+
+
+
 
 const storage = multer.diskStorage({
   destination:'./backend/image',
